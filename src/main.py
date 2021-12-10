@@ -38,8 +38,8 @@ class Birthday:
     @staticmethod
     def calculate_age_seconds(birthday):
         birthday = str(birthday)
-        birthday = datetime.datetime.strptime(birthday,"%m/%d/%Y")
-        result = (Time.today - birthday).total_seconds()
+        birthday = datetime.date.strptime(birthday,"%m/%d/%Y")
+        result = (Birthday.today - birthday).total_seconds()
         return f"About {result} seconds have passed since you were born!"
     
     
@@ -48,3 +48,8 @@ class Birthday:
     
     def __repr__(self):
         return f'{self.__class__.__name__}({self.name},{self.year},{self.month},{self.day})'
+
+
+if __name__ == "__main__":
+    Sina = Birthday("Sina",2000,11,21)
+    print(Sina.famous_people())
