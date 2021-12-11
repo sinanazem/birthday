@@ -11,7 +11,7 @@ class Birthday:
         self.month = month
         self.day = day
     
-    def get_birthday(self):
+    def calculate_age_day(self):
         today = datetime.date.today()
         date_of_birth = datetime.date(self.year,self.month,self.day)
         birthday = datetime.date(today.year,self.month,self.day)
