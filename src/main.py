@@ -38,8 +38,8 @@ class Birthday:
     @staticmethod
     def calculate_age_seconds(birthday):
         birthday = str(birthday)
-        birthday = datetime.date.strptime(birthday,"%m/%d/%Y")
-        result = (Birthday.today - birthday).total_seconds()
+        birthday = datetime.datetime.strptime(birthday,"%m/%d/%Y")
+        result = (datetime.datetime.now() - birthday).total_seconds()
         return f"About {result} seconds have passed since you were born!"
     
     
