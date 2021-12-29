@@ -1,8 +1,8 @@
 # Birthday
 
-<img src="https://i.ytimg.com/vi/Lpj73qkxnqI/maxresdefault.jpg"
+<img src="https://cdn.pixabay.com/photo/2013/07/12/19/02/happy-birthday-154242_960_720.png"
      alt="Markdown Monster icon"
-     style="float: left; margin-right: 10px;" />
+     style="float: left; margin-right: 10px;" height=250 width=500 />
 
 ## How to Run
 
